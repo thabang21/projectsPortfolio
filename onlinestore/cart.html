@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="index.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="jQuery.js"></script>
+
+    <title>Cart </title>
+
+
+</head>
+
+<body >
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <h2 class="anim ">BUY NOW</h2>
+        <ul class="listLinks ">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <form action="">
+        <label for="discount"><h4>Choose Option</h4></label><br>
+            
+        <input type="radio"  name="choose"   value="Collection">
+        <label for="collection">Collection</label><br>
+
+        
+        <input type="radio"  name="choose" value="delivery">
+        <label for="delivery">Delivery</label><br>
+
+    </form>
+
+    <form style="padding-top: 30px;" class="container-fluid" align="center">
+        <div class="col-md-12">
+         
+
+            <label class="chained" for="discount"><h4>Delivery Option</h4></label><br>
+            <button type="button" onclick="locationOpt()">Select location</button>
+            <br>
+            <label for="discount"><h4> Add discount</h4></label><br>
+            <button type="button" onclick="discount()">Add </button><br>
+
+            
+            <label for="discount"><h4> total amount</h4></label><br>
+            <button type="button" onclick="netPay()">netPay</button><br>
+
+            <label for="discount"><h4> confirm payment</h4></label><br>
+            <button type="button"  onclick="confirm()">confirm order</button>
+        </div>
+    </form>
+    <br>
+
+    <div> 
+       <h1 id="pause">ITEMS SELECTED</h1>
+      <button class="stop">stop effects</button>
+    </div>
+    <div class="products-container">
+        <div class="product-header">
+
+            <h5 class="product-header">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+       
+        </div>
+    </div>
+    <div class="products">
+
+
+    </div>
+        <br><br><br>
+    
+		<div class="accordion_head text-gyellow"><button>hover for more information</button> <span class="plusminus">+</span>
+      
+		</div>
+		<div class="accordion_body" style="display: none;"><h4>
+            kindly be informed that your order will be delivered within two days, any further delay contacts us,thank you.</h4x>
+	
+	</div >
+
+
+    <footer class="bg-dark">
+
+        <p>Please contact for any enquary,Thank you...</p>
+    </footer>
+
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
