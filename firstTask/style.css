@@ -101,7 +101,8 @@ h2{
 .section2{
     
     padding: 80px 0;
-    height: 800px;
+    min-height: 100%;
+
    
     text-align: center;
     margin-top: 40px;
@@ -117,7 +118,8 @@ h2{
 }
 
 .section2 img{
-    height: 300px;
+
+    max-height: 100%;
 }
 
 
@@ -182,3 +184,77 @@ footer{
     padding: 15px;
     color: whitesmoke;
 }
+
+@media (max-width: 800px) {
+    .flex {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .text{
+        margin-top: 19px;
+      
+    }
+}
+
+
+/*  media space for response  
+
+@media (min-width: 700px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .hero {
+    padding: 100px 0;
+  }
+  .d-flex {
+    flex-direction: row;
+  }
+  .hero__text {
+    align-self: flex-end;
+  }
+  .flex-right {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+    .flex {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .flex-right {
+      flex-direction: column;
+    }
+    .section-2__col--left {
+      width: 62%;
+    }
+  
+    .section-2__col--right {
+      width: 32%;
+    }
+    .section-2-image {
+      margin: 36px 0;
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .col-1 {
+      width: 35%;
+    }
+    .col-2 {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  */
